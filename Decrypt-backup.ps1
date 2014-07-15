@@ -7,9 +7,6 @@
 	 Filename:     	
 	===========================================================================
 #>
-param (
-[System.Boolean]$Sanitize = $true
-)
 
 [int]$i = 0;[int]$xMenuChoiceA = 0
 $itunespath = "$env:APPDATA\Apple Computer\MobileSync\Backup"
@@ -34,16 +31,7 @@ while ($xMenuChoiceA -lt 1 -or $xMenuChoiceA -gt $i)
 	}
 }
 
-clear
 $xMenuChoiceA = $xMenuChoiceA - 1; $Device = $Devices[$xMenuChoiceA]
-python .\backup_tool.py $itunespath\$Device Decrypted-$Device
-sleep -Seconds 1; clear
 
-if ($Sanitize -eq $true)
-{
-	python .\keychain_tool.py -ds "Decrypted-$Device/KeychainDomain/keychain-backup.plist" "Decrypted-$Device/Manifest.plist"
- }
-else
-{
-	python .\keychain_tool.py -d "Decrypted-$Device/KeychainDomain/keychain-backup.plist" "Decrypted-$Device/Manifest.plist"
-}
+python .\backup_tool.py $itunespath\$Device Decrypted-$Device
+python keychain_tool.py -d "Decrypted-$Device/KeychainDomain/keychain-backup.plist" "Decrypted-$Device/Manifest.plist"
