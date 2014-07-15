@@ -1,0 +1,12 @@
+*.DS_Store
+*.py
+*.pyc
+README.txt
+*.psbuild
+wordlist.dict
+iOS Keychain Demo Steps.txt
+*.TempPoint.*
+iOSbackup_Speed-decrypter.Run.ps1
+Startup.pss
+iOSbackup_Speed-decrypter.psprojs
+iOSbackup_Speed-decrypter.psproj
