@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DAAccountPersistentUUID</key>
+		<string>154CF463-3901-4E4A-991A-0AFA14D2355B</string>
+		<key>DAAgentClass</key>
+		<string>DAIMAPNotesAgent</string>
+		<key>Identifier</key>
+		<string>154CF463-3901-4E4A-991A-0AFA14D2355B</string>
+	</dict>
+	<dict>
+		<key>DAAccountPersistentUUID</key>
+		<string>A27114D3-C761-4353-9D3D-B67A5400BBB1</string>
+		<key>DAAgentClass</key>
+		<string>DAIMAPNotesAgent</string>
+		<key>Identifier</key>
+		<string>A27114D3-C761-4353-9D3D-B67A5400BBB1</string>
+	</dict>
+	<dict>
+		<key>DAAccountPersistentUUID</key>
+		<string>5D821EB6-762E-48F7-BEA3-3A18E782F435</string>
+		<key>DAAgentClass</key>
+		<string>ASAgent</string>
+		<key>Identifier</key>
+		<string>5D821EB6-762E-48F7-BEA3-3A18E782F435</string>
+	</dict>
+	<dict>
+		<key>DAAccountPersistentUUID</key>
+		<string>0056F30C-8A69-4989-949C-666E85C252AA</string>
+		<key>DAAgentClass</key>
+		<string>SubCalAgent</string>
+		<key>Identifier</key>
+		<string>0056F30C-8A69-4989-949C-666E85C252AA</string>
+	</dict>
+</array>
+</plist>
