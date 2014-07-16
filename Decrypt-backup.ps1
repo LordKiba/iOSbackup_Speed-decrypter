@@ -1,12 +1,32 @@
 ﻿<#	
-	===========================================================================
-	 Created with: 	SAPIEN Technologies, Inc., PowerShell Studio 2014 v4.1.54
-	 Created on:   	7/14/2014 3:23 PM
-	 Created by:   	James A Kulikowski
-	 Organization: 	GFG
-	 Filename:     	
-	===========================================================================
+	.Notes
+		===========================================================================
+		 Created with: 	SAPIEN Technologies, Inc., PowerShell Studio 2014 v4.1.54
+		 Created on:   	7/14/2014 3:23 PM
+	 	Created by:   	KSI SYN
+	 	Organization: 	SCN
+	 	Filename:     	Decrypt-backup.ps1
+		===========================================================================
+	
+	.SYNOPSIS
+		Decrypt iOS backup and display Keybag contents	
+
+	.DESCRIPTION
+		Function/Script to Automate the process of decrypting an iOS encrypted backup then parseing the backup plist keybag
+
+	.PARAMETER Sanitize
+		The sanitize parameter is a [system.Boolean] value that is defaulted to True. This masks passwords in the display output. Setting -Sanitize $false in the command line param's when invokeing this script will unhide all password data and display in clear text.
+
+	.EXAMPLE 
+		Decrypt-backup.ps1
+
+	.EXAMPLE
+		Decrypt-backup.ps1 -Sanitize $false
+
+	.OUTPUTS
+		[system.string]
 #>
+
 param (
 [System.Boolean]$Sanitize = $true
 )
